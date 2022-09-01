@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+}
+.container{
+    height: 100vh;
+    /* padding: 10px; */
+    box-sizing: border-box;
+}
+label{
+    display: block;
+    height: 30px;
+    text-indent: 10px;
+    margin-bottom: 2px;
+}
+input{
+    display: block;
+    height: 30px;
+    width: 100%;
+    text-indent: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #5cb85c;    
+}
+.backgroundImg{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+
+}
+.backgroundImg > img{
+    width: 100vw;
+    height: 100vh;
+}
+.form{
+    position: absolute;
+    background-color: rgba(0,0,0,0.3);
+    top: 50px;
+    left: 10%;
+    right: 10%;
+    bottom: 2%;
+    color: white;
+    box-sizing: border-box;
+    padding: 0px 20px 0px 10px;
+}
+@media (max-width:700px){
+    .form{
+        display: block;
+        left: 20%;
+        right: 20%;
+
+    }
+    
+}
+@media (max-width:800px){
+    .icon-div > img{
+        display: none;
+    }
+}
+@media (min-width:800px){
+    .form{
+        display: block;
+        left: 40%;
+        right: 5%;
+    }
+}
+.form-element{    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+}
+#button{
+    grid-column: 1/-1;
+    width: 250px;
+    height: 40px;
+    background-color: #596D48;
+    color: #fff;
+    border: 1px xolid #596D48;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.signup-header{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 10px;
+}
+#odin-icon{
+    display: flex;
+    align-self: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid #5cb85c;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+@media screen and( min-width: 600px){
+    .icon-div >img{
+        display: none;
+    }
+}
+.signup-header > p{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.signup-header > h3{
+    margin-top: 20x;
+}
+
+#line{
+    grid-column: 1/-1;
+    box-shadow: 1px 0px 2.5px 2.1px rgba(0,0,0,0.1);
+    margin: 10px 0;
+}
+
+input:invalid{
+    border: 1px solid red;
+}
+input:valid{
+    border: px solid #5cb85c;    
+}
+
+input:focus{
+    border-bottom: 5px solid #5cb85c;
+}
+
+#odin-icon2{
+width: 100px;
+}
+.icon-div{
+    position: absolute;
+    top: 40%;
+    left: 40px; 
+    right: 40px;
+    width: 36.9%;
+    background-color: rgba(0,0,0,0.2);
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+}
+#member{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 20px;
+}
+#message{
+    color: red;
+}
