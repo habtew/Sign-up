@@ -1,150 +1,146 @@
-*{
+/* general style */
+:root{
+    font-size: 16px;
     margin: 0;
 }
-.container{
-    height: 100vh;
-    /* padding: 10px; */
-    box-sizing: border-box;
+body{
+    background: url('./images/casey-horner-RmoWqDCqN2E-unsplash.jpg');
+    background-repeat: no-repeat;
 }
-label{
-    display: block;
-    height: 30px;
-    text-indent: 10px;
-    margin-bottom: 2px;
-}
-input{
-    display: block;
-    height: 30px;
-    width: 100%;
-    text-indent: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #5cb85c;    
-}
-.backgroundImg{
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100vw;
-
-}
-.backgroundImg > img{
-    width: 100vw;
-    height: 100vh;
-}
-.form{
-    position: absolute;
-    background-color: rgba(0,0,0,0.3);
-    top: 50px;
-    left: 10%;
-    right: 10%;
-    bottom: 2%;
-    color: white;
-    box-sizing: border-box;
-    padding: 0px 20px 0px 10px;
-}
-@media (max-width:700px){
-    .form{
-        display: block;
-        left: 20%;
-        right: 20%;
-
-    }
+.main-container{
+    max-width: 675px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    color: #fff;
     
 }
-@media (max-width:800px){
-    .icon-div > img{
-        display: none;
-    }
+img{
+    max-width: 100%;
 }
-@media (min-width:800px){
-    .form{
-        display: block;
-        left: 40%;
-        right: 5%;
-    }
+strong{
+    font-size: 1.5em;
+    font-weight: 900;
+    color: blue
 }
-.form-element{    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+a, button{
+    cursor: pointer;
+}
+/* lay out */
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 1.1em 1.4em;
+}
+.backgroundImg{
+    background-color: rgba(92, 99, 92, 0.4);
+    display: flex;
+    padding: 1em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.backgroundImg h1:hover,
+.backgroundImg h1:hover{
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+.icon-div{
+    width: 25%;
+}
+.icon-div2{
+    width: 25%;
+    display: none;
+}
 
-}
-#button{
-    grid-column: 1/-1;
-    width: 250px;
-    height: 40px;
-    background-color: #596D48;
-    color: #fff;
-    border: 1px xolid #596D48;
-    font-size: 25px;
-    border-radius: 10px;
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 1.1em 0.9em;
 }
 
 .signup-header{
     display: flex;
     flex-direction: column;
-    padding: 100px 10px;
+    align-items: center;
 }
-#odin-icon{
-    display: flex;
-    align-self: center;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 1px solid #5cb85c;
-    margin-top: 0px;
-    margin-bottom: 10px;
+input{
+    height: 3.2em;
+    width: 70%;
+    border-radius: 2em;
+    border: none;
+    text-indent: 1.4em;
 }
-@media screen and( min-width: 600px){
-    .icon-div >img{
-        display: none;
-    }
+input:focus,
+input:active,
+input:hover,
+input:valid,
+input{
+    border: 2px solid #596D48;
 }
-.signup-header > p{
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-.signup-header > h3{
-    margin-top: 20x;
-}
-
-#line{
-    grid-column: 1/-1;
-    box-shadow: 1px 0px 2.5px 2.1px rgba(0,0,0,0.1);
-    margin: 10px 0;
-}
-
 input:invalid{
     border: 1px solid red;
 }
-input:valid{
-    border: px solid #5cb85c;    
-}
-
-input:focus{
-    border-bottom: 5px solid #5cb85c;
-}
-
-#odin-icon2{
-width: 100px;
-}
-.icon-div{
-    position: absolute;
-    top: 40%;
-    left: 40px; 
-    right: 40px;
-    width: 36.9%;
-    background-color: rgba(0,0,0,0.2);
-    margin-left: 0px;
+.form-item{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    margin-bottom: 1em;
+    align-items: center;
 }
-#member{
-    margin-top: 15px;
-    margin-bottom: 30px;
-    padding: 20px;
-    font-size: 20px;
+
+.form-item label{
+    width: 30%;
+    margin-right: 1em;
+
+}
+
+#line{
+    margin: 2.5em 0;
+}
+#button{
+    font-size: 1.6rem;
+    padding: 0.9rem 1.1em;
+    border: none;
+    border-radius: 2em;
+    background-color: #596D48;
+    color: white;
 }
 #message{
     color: red;
+}
+#member{
+    margin-top: 1.2em;
+    margin-bottom: 1.9em;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.success{
+    border-radius: 2em;
+    background-color: rgba(128, 128,128, 0.3);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+@media (min-width: 678px){
+    .main-container{
+        max-width: 80%;
+        
+    }
+    .container{
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 1.1em 0;
+    }
+    .backgroundImg{
+       width:40%;
+        background-color: rgba(0, 0, 0, 0.3);
+        height: fit-content;
+        margin: auto 0;
+    }
+    .form{
+        width: 45%;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .icon-div2{
+        display: block;  
+    }
 }

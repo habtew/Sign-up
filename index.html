@@ -8,50 +8,72 @@
     <title>Sign up</title>
 </head>
 <body>
-    <div class="container">
-        <div class="backgroundImg">
-            <img src="https://images.unsplash.com/photo-1537420327992-d6e192287183?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" />
-        </div>
-        <div class="icon-div">
-            <img src="./images/odin-lined.png"  id="odin-icon2"/>
-        
-        </div>
-        <div class="form">
-            <div class="signup-header">
-                <img src="./images/odin-lined.png"  id="odin-icon"/>
-                <p>
-                    <strong><i>ODIN</i></strong> is one of the best place for programmer to start front end web development and to develop his/her skill 
-                   to next level we have robust community to join us <strong>Sign up</strong> 
-                </p>
-                <h3>Let's do it</h3>
-
-            </div>
-            <form action="#" method="post" class="form-element" onsubmit="return dosumbit();">
-                <section>
-                    <label for="firstName">* FIRST NAME </label>
-                    <input type="text" placeholder="jon" name="firstName" id="firstName" validate required/>
-                    <label for="email">* EMAIL</label>
-                    <input type="email" name="email" id="email" placeholder="example@gmail.com" validate  required/>
-                    <label for="pasword">* PASSWORD</label>
-                    <input type="password" id="password" name="password" required/>
-                    <p id="message"></p>
-                </section>
-                <section>
-                    <label for="lastName">* LAST NAME</label>
-                    <input type="text" placeholder="doe" name="lastName" id="lastName" validate required/>
-                    <label for="phone">* Phone</label>
-                    <input type="tel" id="phone" placeholder="+2519100000000" name="phone" validate required/>
-                    <label for="password1">* CONFIRM PASWORD</label>
-                    <input type="password" id="password1" name="password1" required/>
+    <main class="main-container">
+        <div class="container">
+            <div class="backgroundImg">
+                <div class="icon-div">
+                    <img src="./images/odin-lined.png"  id="odin-icon2"/>
                     
-                </section>
-                <hr id="line" />
-                <button id="button">Create Account</button>
-            </form>
-            <p id="member">do you have acoount? <a href="#">Log in</a></p>
+                </div>
+                <h1>
+                    Odin-Project
+                </h1>
+            </div>
+
+            <div class="form">
+                <div class="signup-header">
+                    <div class="icon-div2">
+                        <img src="./images/odin-lined.png"  id="odin-icon2"/>
+                    </div>
+                    <p>
+                        <strong><i>ODIN</i></strong> is one of the best place for programmer to start front end web development and to develop his/her skill 
+                       to next level we have robust community to join us <strong>Sign up</strong> 
+                    </p>
+                    <h3>Let's do it</h3>
+    
+                </div>
+                <form action="#" method="post" class="form-element">
+                    <div class="form-item">
+                        <label for="firstName">* FIRST NAME </label>
+                        <input type="text" placeholder="jon" name="firstName" id="firstName" validate required/>
+                        
+                    </div>
+                    <div class="form-item">
+                        <label for="lastName">* LAST NAME</label>
+                        <input type="text" placeholder="doe" name="lastName" id="lastName" validate required/>
+                        
+                    </div>
+
+                    <div class="form-item">
+                        <label for="email">* EMAIL</label>
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com" validate  required/>
+                        
+                    </div>
+                    <div class="form-item">
+                        <label for="phone">* Phone</label>
+                        <input type="tel" id="phone" placeholder="+2519100000000" name="phone" validate required/>
+                    
+                    </div>
+
+                    <div class="form-item">
+                        <label for="pasword">* PASSWORD</label>
+                        <input type="password" id="password" name="password" required/>
+                    </div>
+                    <div class="form-item">
+                        <label for="password1">* CONFIRM PASWORD</label>
+                        <input type="password" id="password1" name="password1" required/>
+                    </div>    
+                    <p id="message"></p>
+                    <div id="success"></div>
+                    <hr id="line" />
+                    <button id="button">Create Account</button>
+                </form>
+                <p id="member">do you have acoount? <a href="#">Log in</a></p>
+            </div>
+            
         </div>
-        
-    </div>
+    </main>
+
     <script src="./index.js"></script>
 </body>
 </html>
